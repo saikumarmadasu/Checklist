@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IMK-Mo-hSM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checklist View Controller-->
+        <scene sceneID="Hk2-8A-vwl">
+            <objects>
+                <tableViewController id="IMK-Mo-hSM" customClass="ChecklistViewController" customModule="Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DCe-Pk-aM8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" id="wzY-1Q-3gH">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wzY-1Q-3gH" id="mUd-3o-zjh">
+                                    <rect key="frame" x="0.0" y="0.0" width="370" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="25" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVg-T3-UOS">
+                                            <rect key="frame" x="20" y="11" width="330" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="qVg-T3-UOS" secondAttribute="trailing" constant="20" symbolic="YES" id="3N1-na-NaU"/>
+                                        <constraint firstItem="qVg-T3-UOS" firstAttribute="bottom" secondItem="mUd-3o-zjh" secondAttribute="bottomMargin" constant="11.5" id="4Qe-NA-cvn"/>
+                                        <constraint firstItem="qVg-T3-UOS" firstAttribute="leading" secondItem="mUd-3o-zjh" secondAttribute="leading" constant="20" symbolic="YES" id="5sE-vn-e6K"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="qVg-T3-UOS" secondAttribute="trailing" id="Ss4-T2-xO8"/>
+                                        <constraint firstAttribute="bottom" secondItem="qVg-T3-UOS" secondAttribute="bottom" constant="11.5" id="U2n-r1-QnV"/>
+                                        <constraint firstItem="qVg-T3-UOS" firstAttribute="leading" secondItem="mUd-3o-zjh" secondAttribute="leadingMargin" id="Zxr-1s-lsQ"/>
+                                        <constraint firstItem="qVg-T3-UOS" firstAttribute="top" secondItem="mUd-3o-zjh" secondAttribute="topMargin" constant="11" id="dtb-6l-x5Y"/>
+                                        <constraint firstItem="qVg-T3-UOS" firstAttribute="top" secondItem="mUd-3o-zjh" secondAttribute="top" constant="11" id="qzi-PM-Cl7"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IMK-Mo-hSM" id="THL-eH-bCX"/>
+                            <outlet property="delegate" destination="IMK-Mo-hSM" id="zTR-yg-572"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltA-s4-eAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
